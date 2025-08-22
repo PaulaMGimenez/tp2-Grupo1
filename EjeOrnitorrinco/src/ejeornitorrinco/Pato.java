@@ -3,13 +3,13 @@
  * To change this template file, choose Tools | Templates
  * and open the template in the editor.
  */
+package ejeornitorrinco;
 
 /**
  *
  * @author Usuario
  */
 public class Pato {
-    
-    //hola pato
+    // hola pato
     
 }
