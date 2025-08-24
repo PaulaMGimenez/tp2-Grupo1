@@ -18,7 +18,18 @@ public class OrnisAzul extends Castor {
 
     @Override
     public void nadar() {
-        
+        // la velocidad final = velocidad del padre + propulsion propia
+        double velocidadFinal = getVelocidad() + propulsion;
+        System.out.println(nombre + " (ornitorinco azul) activa propulsion de " + propulsion + " km/h → nada a " + velocidadFinal + " km/h");
+    }
+    
+    
+     public double getPropulsion(){
+        return propulsion;
+    }
+    
+    public String getNombre(){
+        return nombre;
     }
     
     

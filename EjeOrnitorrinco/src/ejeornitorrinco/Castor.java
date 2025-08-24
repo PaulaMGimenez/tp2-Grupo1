@@ -17,6 +17,15 @@ public class Castor {
         this.velocidad = velocidad;
     }
     
+    public double getLongitudCola() {
+        return longitudCola;
+    }
+
+    public double getVelocidad() {
+        return velocidad;
+    }
+    
+    
     public void tocarGuitarra(){
     
     }
