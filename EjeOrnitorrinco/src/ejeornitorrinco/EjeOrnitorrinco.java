@@ -1,5 +1,7 @@
 package ejeornitorrinco;
 
+import java.util.*;
+
 public class EjeOrnitorrinco {
 
     public static void main(String[] args) {
@@ -63,7 +65,29 @@ public class EjeOrnitorrinco {
         
         
         
+                // Lista de mejores nadadores
+        ArrayList<OrnisAzul> mejoresNad = new ArrayList<>();
         
+        
+        for (int i = 0; i < hermanos.length; i++) {
+            Castor h = hermanos[i];
+            if (h instanceof OrnisAzul) {
+                mejoresNad.add((OrnisAzul) h);
+            }
+        }
+        
+        
+        
+        // Ordenar lista por propulsion
+        mejoresNad.sort(Comparator.comparingDouble(OrnisAzul::getPropulsion));
+
+        // Mostrar lista ordenada
+        System.out.println("---Lista propulsión ascendente---");
+        Iterator<OrnisAzul> it = mejoresNad.iterator();
+        while (it.hasNext()) {
+            OrnisAzul o = it.next();
+            System.out.println(o.getNombre() + " con propulsión: " + o.getPropulsion());
+        }
     
         
         
