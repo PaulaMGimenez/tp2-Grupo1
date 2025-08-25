@@ -1,6 +1,7 @@
 package ejeornitorrinco;
 
  import java.util.Random;
+import java.util.Scanner;
 
 public class Castor {
     protected double longitudCola;
@@ -37,6 +38,11 @@ public class Castor {
     }
     // le agrego el sout para mostrar a la velocidad que tiene que ir el castor "8km/h"
     public void nadar(){
+        Scanner sc = new Scanner(System.in);
+        System.out.println("Ingrese la velocidad del castor (km/h)");
+        
+        velocidad= sc.nextDouble();
+        
         System.out.println("El castor nada a " + velocidad + "km/h");
     }
    
